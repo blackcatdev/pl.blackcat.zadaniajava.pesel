@@ -3,9 +3,9 @@ package pl.blackcat.zadaniajava.pesel;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class checkValue {
+class checkValue {
 
-	public static int getInteger(Scanner scanner) {
+	static int getInteger(Scanner scanner) {
 		while (true) {
 			try {
 				return scanner.nextInt();
