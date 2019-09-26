@@ -28,8 +28,10 @@ class checkValue {
 */
 		if (checkPesel.stringLenght(date, 6) && checkPesel.onlyNumbers(date) && checkDateCorrectness(date))
 			return date;
-		else
+		else {
+			System.out.println("Generuję losową datę.");
 			return generatePesel.generateDate();
+		}
 
 
 	}
@@ -44,5 +46,18 @@ class checkValue {
 		} catch (ParseException e) {
 			return false;
 		}
+	}
+
+	static String checkGender(String gender) {
+		if (checkPesel.stringLenght(gender,1) )
+			return generatePesel.generateGender(gender.charAt(0));
+		else {
+			System.out.println("Błędna płeć. Generuję losową.");
+			return generatePesel.generateGender();
+		}
+
+
+
+
 	}
 }

@@ -18,8 +18,8 @@ public class Main {
 
 			switch (wybor) {
 				case 1:
-					String pesel=getPesel.getPesel();
-					peselStatus.peselStatus(checkPesel.checkPesel(pesel),pesel);
+					String pesel = getPesel.getPesel();
+					peselStatus.peselStatus(checkPesel.checkPesel(pesel), pesel);
 					break;
 				case 2:
 					generatePesel.generatePesel();

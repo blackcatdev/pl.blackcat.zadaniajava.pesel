@@ -16,11 +16,11 @@ class checkPesel {
 
 	}
 
-	public static boolean stringLenght(String string, int value) {
+	static boolean stringLenght(String string, int value) {
 		return string.length() == value;
 	}
 
-	public static boolean onlyNumbers(String string) {
+	static boolean onlyNumbers(String string) {
 		for (int i = 0; i < string.length(); i++) {
 
 			if (string.charAt(i) < '0' || string.charAt(i) > '9') {
