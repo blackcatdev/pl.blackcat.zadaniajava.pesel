@@ -11,8 +11,12 @@ class peselStatus {
 		if (status == 3)
 			System.out.println("Nie zgadza się suma kontrolna peselu.\n");
 
+		if (status == 4)
+			System.out.println("Nie ma tyle dni w miesiącu. ;)\n");
+
 		if (status == 0)
 			System.out.println("Pesel jest poprawny.\n");
+
 
 	}
 }

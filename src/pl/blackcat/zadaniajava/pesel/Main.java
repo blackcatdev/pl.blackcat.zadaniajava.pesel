@@ -11,6 +11,7 @@ public class Main {
 		while (true) {
 			System.out.println("Wybierz, co chcesz zrobić:");
 			System.out.println("1 - sprawdź poprawność numeru pesel");
+			System.out.println("2 - generuj numer pesel");
 			System.out.println("0 - zakończ program");
 			System.out.print("Twój wybór: ");
 			int wybor = checkValue.getInteger(scanner);
@@ -19,6 +20,9 @@ public class Main {
 				case 1:
 					String pesel=getPesel.getPesel();
 					peselStatus.peselStatus(checkPesel.checkPesel(pesel),pesel);
+					break;
+				case 2:
+					generatePesel.generatePesel();
 					break;
 				case 0:
 					System.exit(0);
