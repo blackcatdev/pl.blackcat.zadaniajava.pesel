@@ -1,7 +1,7 @@
 package pl.blackcat.zadaniajava.pesel;
 
-class peselStatus {
-	static void peselStatus(int status, String pesel) {
+public class peselStatus {
+	public static void peselStatus(int status, String pesel) {
 		if (status == 1)
 			System.out.println("Pesel ma niepoprawną ilość znaków. Spodziewano się 11, wpisano " + pesel.length() + ".\n");
 
@@ -16,7 +16,6 @@ class peselStatus {
 
 		if (status == 0)
 			System.out.println("Pesel jest poprawny.\n");
-
 
 	}
 }

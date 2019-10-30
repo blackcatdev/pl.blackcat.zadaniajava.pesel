@@ -1,9 +1,9 @@
 package pl.blackcat.zadaniajava.pesel;
 
-class checkPesel {
+public class checkPesel {
 
 
-	static int checkPesel(String pesel) {
+	public static int checkPesel(String pesel) {
 		if (!stringLenght(pesel,11))
 			return 1;
 		if (!onlyNumbers(pesel))
